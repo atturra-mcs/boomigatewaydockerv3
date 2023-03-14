@@ -12,6 +12,8 @@ https://github.com/anthonyrabiaza/boomigatewaydockerv3
 
 Docker
 ```
+mkdir -p /tmp/boomigateway/
+
 docker run -d -t -i \
 -e BOOMI_USERNAME=atomsphereuser@email.com \
 -e BOOMI_PASSWORD=thepassword \
