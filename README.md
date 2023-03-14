@@ -3,8 +3,11 @@ This repository contains the sources for the publicly available custom docker im
 
 The version 4 images are in the [main branch](https://bitbucket.org/officialboomi/docker-images/src/main/).
 
-## Custom Gateway
+## Custom Gateway images
 https://hub.docker.com/repository/docker/anthonyrabiaza/docker-boomi-gateway
+
+## Sources
+https://github.com/anthonyrabiaza/boomigatewaydockerv3
 
 
 ## Use of Custom Docker Image
