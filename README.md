@@ -19,7 +19,7 @@ docker run -d -t -i \
 -e BOOMI_ATOMNAME=GatewayDocker \
 -e ATOM_LOCALHOSTID='localhost' \
 -v /mnt/boomi/:/tmp/boomigateway/:Z \
-boomigateway/3.1.23
+anthonyrabiaza/docker-boomi-gateway:3.2.13
 ```
 
 Kubernetes
