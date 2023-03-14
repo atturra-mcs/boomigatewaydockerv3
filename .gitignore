@@ -1,0 +1,8 @@
+*.orig
+*.j2
+/src/rhel-java/
+/src/phusion-java8/
+/src/main/
+/docker_inst
+/src/install/jmxutil/
+/src/molecule/jmxutil/jmxterm.jar

@@ -1,0 +1,14 @@
+[Unit]
+After=init-boomi.service
+
+[Service]
+User=boomi
+WorkingDirectory=/home/boomi
+PassEnvironment=JAVA_HOME
+ExecStart=/home/boomi/start-atom.sh
+ExecStop=/home/boomi/stop-atom.sh
+Type=forking
+TimeoutStartSec=600
+
+[Install]
+WantedBy=default.target
