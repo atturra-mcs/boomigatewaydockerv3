@@ -21,7 +21,7 @@ COPY scaledown.sh /home/boomi
 RUN systemctl enable init-boomi.service
 RUN systemctl enable atom.service
 COPY probe.sh /home/boomi
-COPY src/gateway/jmxutil/jmxterm.jar /opt/jmxutil/jmxterm.jar
+COPY jmxutil/jmxterm.jar /opt/jmxutil/jmxterm.jar
 
 EXPOSE 8077
 EXPOSE 18077
