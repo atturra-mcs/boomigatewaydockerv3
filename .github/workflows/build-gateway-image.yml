@@ -9,7 +9,7 @@ on:
 jobs:
   build-gateway-image:
     name: Build Gateway Image
-    runs-on: gha-org-runner-set
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
