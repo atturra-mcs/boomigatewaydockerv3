@@ -35,9 +35,7 @@ RUN yum upgrade -y  && \
     yum clean all -y
 
 ##Install Centos Packages
-COPY centos.repo /etc/yum.repos.d
 RUN yum install -y --nodocs nfs-utils
-RUN rm /etc/yum.repos.d/centos.repo
 
 ## Allow for symbolic linking
 RUN chmod o+w /usr/local/bin
