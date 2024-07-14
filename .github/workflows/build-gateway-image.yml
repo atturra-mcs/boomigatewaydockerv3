@@ -35,7 +35,8 @@ jobs:
           file: src/install/Dockerfile
           platforms: linux/amd64
           tags: |
-            boomibase:3.2.13
+            mcsshared.azurecr.io/boomibase:latest
+            mcsshared.azurecr.io/boomibase:1.0.${{ github.run_id }}
 
       - name: Build Boomi Gateway
         uses: docker/build-push-action@v5
