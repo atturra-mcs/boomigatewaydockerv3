@@ -1,4 +1,4 @@
-FROM boomi/rhel-java:11u17
+FROM boomi/rhel-java:11u23
 
 ##set default env values for a/m/c
 ENV URL="https://platform.boomi.com"
