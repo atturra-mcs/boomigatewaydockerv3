@@ -31,11 +31,11 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: src/install
-          push: false
+          push: true
           file: src/install/Dockerfile
           platforms: linux/amd64
           tags: |
-            boomibase/3.2.13
+            localhost:5000/boomibase/3.2.13
 
       - name: Build Boomi Gateway
         uses: docker/build-push-action@v5
