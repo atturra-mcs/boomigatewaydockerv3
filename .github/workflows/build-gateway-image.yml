@@ -35,7 +35,7 @@ jobs:
           file: src/install/Dockerfile
           platforms: linux/amd64
           tags: |
-            localhost:5000/boomibase:3.2.13
+            boomibase:3.2.13
 
       - name: Build Boomi Gateway
         uses: docker/build-push-action@v5
