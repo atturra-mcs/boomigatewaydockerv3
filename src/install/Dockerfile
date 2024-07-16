@@ -33,12 +33,12 @@ RUN yum upgrade -y  && \
 
 ##Install Centos Packages
 COPY centos.repo /etc/yum.repos.d
-RUN yum install -y --allowerasing --nodocs nfs-utils
+RUN yum install -y --skip-broken --nodocs nfs-utils
 RUN rm /etc/yum.repos.d/centos.repo
 RUN yum clean all -y
 
 ##Install required packages
-RUN yum install -y --nodocs --allowerasing wget crontabs sudo
+RUN yum install -y --nodocs --skip-broken wget crontabs sudo
 
 ## Allow for symbolic linking
 RUN chmod o+w /usr/local/bin
