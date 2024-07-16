@@ -38,7 +38,7 @@ RUN rm /etc/yum.repos.d/centos.repo
 RUN yum clean all -y
 
 ##Install required packages
-RUN yum install -y --nodocs wget crontabs sudo
+RUN yum install -y --nodocs --allowerasing wget crontabs sudo
 
 ## Allow for symbolic linking
 RUN chmod o+w /usr/local/bin
