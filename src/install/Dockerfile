@@ -33,7 +33,7 @@ RUN yum upgrade -y  && \
 
 ##Install Centos Packages
 COPY centos.repo /etc/yum.repos.d
-RUN yum install -y --nodocs nfs-utils
+RUN yum install -y --allowerasing --nodocs nfs-utils
 RUN rm /etc/yum.repos.d/centos.repo
 RUN yum clean all -y
 
