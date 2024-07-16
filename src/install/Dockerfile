@@ -26,9 +26,6 @@ COPY jmxutil/jmxterm.jar /opt/jmxutil/jmxterm.jar
 EXPOSE 8077
 EXPOSE 18077
 
-##Install required packages
-RUN yum install -y --nodocs wget crontabs sudo
-
 ##Update base image
 RUN yum upgrade -y  && \
     yum autoremove -y && \
@@ -38,6 +35,9 @@ RUN yum upgrade -y  && \
 COPY centos.repo /etc/yum.repos.d
 RUN yum install -y --nodocs --allowerasing nfs-utils
 RUN rm /etc/yum.repos.d/centos.repo
+
+##Install required packages
+RUN yum install -y --nodocs wget crontabs sudo
 
 ## Allow for symbolic linking
 RUN chmod o+w /usr/local/bin
