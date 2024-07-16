@@ -1,7 +1,7 @@
 #!/bin/bash
 # Copyright (c) 2015 Boomi, Inc.
 
-wget $URL/atom/gateway_install64.sh
+wget https://platform.boomi.com/atom/gateway_install64.sh
 chmod a+x gateway_install64.sh
 ./gateway_install64.sh -q -Vusername=${BOOMI_USERNAME} -Vpassword=${BOOMI_PASSWORD} -VatomName='${BOOMI_CONTAINERNAME}' \
   -VaccountId=${BOOMI_ACCOUNTID} -VenvironmentId=${BOOMI_ENVIRONMENTID} -VproxyHost=${PROXY_HOST} \
